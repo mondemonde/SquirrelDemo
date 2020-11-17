@@ -5,6 +5,20 @@ VisualStudioVersion = 16.0.30621.155
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SquirrelDemo", "SquirrelDemo\SquirrelDemo.csproj", "{4BFE4959-BF55-4C10-AD4C-180A2C1F4362}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Releases", "Releases", "{E630995A-C571-4EBB-A48F-82CD980780C5}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\AppData\Local\SquirrelDemo\app-1.0.1\Temp\Extracted\mondemonde-SquirrelDemo-eed310c\Releases\RELEASES = ..\..\..\AppData\Local\SquirrelDemo\app-1.0.1\Temp\Extracted\mondemonde-SquirrelDemo-eed310c\Releases\RELEASES
+		..\..\..\AppData\Local\SquirrelDemo\app-1.0.1\Temp\Extracted\mondemonde-SquirrelDemo-eed310c\Releases\Setup.exe = ..\..\..\AppData\Local\SquirrelDemo\app-1.0.1\Temp\Extracted\mondemonde-SquirrelDemo-eed310c\Releases\Setup.exe
+		..\..\..\AppData\Local\SquirrelDemo\app-1.0.1\Temp\Extracted\mondemonde-SquirrelDemo-eed310c\Releases\Setup.msi = ..\..\..\AppData\Local\SquirrelDemo\app-1.0.1\Temp\Extracted\mondemonde-SquirrelDemo-eed310c\Releases\Setup.msi
+		..\..\..\AppData\Local\SquirrelDemo\app-1.0.1\Temp\Extracted\mondemonde-SquirrelDemo-eed310c\Releases\SquirrelDemo-1.0.0-full.nupkg = ..\..\..\AppData\Local\SquirrelDemo\app-1.0.1\Temp\Extracted\mondemonde-SquirrelDemo-eed310c\Releases\SquirrelDemo-1.0.0-full.nupkg
+		..\..\..\AppData\Local\SquirrelDemo\app-1.0.1\Temp\Extracted\mondemonde-SquirrelDemo-eed310c\Releases\SquirrelDemo-1.0.1-delta.nupkg = ..\..\..\AppData\Local\SquirrelDemo\app-1.0.1\Temp\Extracted\mondemonde-SquirrelDemo-eed310c\Releases\SquirrelDemo-1.0.1-delta.nupkg
+		..\..\..\AppData\Local\SquirrelDemo\app-1.0.1\Temp\Extracted\mondemonde-SquirrelDemo-eed310c\Releases\SquirrelDemo-1.0.1-full.nupkg = ..\..\..\AppData\Local\SquirrelDemo\app-1.0.1\Temp\Extracted\mondemonde-SquirrelDemo-eed310c\Releases\SquirrelDemo-1.0.1-full.nupkg
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Squirrel", "Squirrel\Squirrel.csproj", "{32038873-10A4-4F54-82F7-F4C76B752BE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteeroidPlatformInstaller", "SteeroidPlatformInstaller\SteeroidPlatformInstaller.csproj", "{31E00A1D-C706-4848-997A-56F576E16DB9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +29,14 @@ Global
 		{4BFE4959-BF55-4C10-AD4C-180A2C1F4362}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4BFE4959-BF55-4C10-AD4C-180A2C1F4362}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4BFE4959-BF55-4C10-AD4C-180A2C1F4362}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32038873-10A4-4F54-82F7-F4C76B752BE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32038873-10A4-4F54-82F7-F4C76B752BE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32038873-10A4-4F54-82F7-F4C76B752BE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32038873-10A4-4F54-82F7-F4C76B752BE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31E00A1D-C706-4848-997A-56F576E16DB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31E00A1D-C706-4848-997A-56F576E16DB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31E00A1D-C706-4848-997A-56F576E16DB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31E00A1D-C706-4848-997A-56F576E16DB9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
