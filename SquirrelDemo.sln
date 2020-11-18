@@ -6,6 +6,20 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SquirrelDemo", "SquirrelDemo\SquirrelDemo.csproj", "{4BFE4959-BF55-4C10-AD4C-180A2C1F4362}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Releases", "Releases", "{E630995A-C571-4EBB-A48F-82CD980780C5}"
+	ProjectSection(SolutionItems) = preProject
+		Releases\RELEASES = Releases\RELEASES
+		Releases\Setup.exe = Releases\Setup.exe
+		Releases\Setup.msi = Releases\Setup.msi
+		Releases\SquirrelDemo-1.0.0-full.nupkg = Releases\SquirrelDemo-1.0.0-full.nupkg
+		Releases\SquirrelDemo-1.0.1-delta.nupkg = Releases\SquirrelDemo-1.0.1-delta.nupkg
+		Releases\SquirrelDemo-1.0.1-full.nupkg = Releases\SquirrelDemo-1.0.1-full.nupkg
+		Releases\SquirrelDemo-1.0.2-delta.nupkg = Releases\SquirrelDemo-1.0.2-delta.nupkg
+		Releases\SquirrelDemo-1.0.2-full.nupkg = Releases\SquirrelDemo-1.0.2-full.nupkg
+		Releases\SquirrelDemo-1.0.3-delta.nupkg = Releases\SquirrelDemo-1.0.3-delta.nupkg
+		Releases\SquirrelDemo-1.0.3-full.nupkg = Releases\SquirrelDemo-1.0.3-full.nupkg
+		Releases\SquirrelDemo-1.0.4-delta.nupkg = Releases\SquirrelDemo-1.0.4-delta.nupkg
+		Releases\SquirrelDemo-1.0.4-full.nupkg = Releases\SquirrelDemo-1.0.4-full.nupkg
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Squirrel", "Squirrel\Squirrel.csproj", "{32038873-10A4-4F54-82F7-F4C76B752BE3}"
 EndProject
