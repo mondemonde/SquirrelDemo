@@ -23,27 +23,61 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Squirrel", "Squirrel\Squirr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteeroidPlatformInstaller", "SteeroidPlatformInstaller\SteeroidPlatformInstaller.csproj", "{31E00A1D-C706-4848-997A-56F576E16DB9}"
 EndProject
+Project("{911E67C6-3D85-4FCE-B560-20A9C3E3FF48}") = "WF_WCF_Samples", "F:\Users\rgalvez\Downloads\WF_WCF_Samples.exe", "{622B3B4F-2DF4-492C-B4AA-2CB4F54E6B6E}"
+	ProjectSection(DebuggerProjectSystem) = preProject
+		PortSupplier = 00000000-0000-0000-0000-000000000000
+		Executable = F:\Users\rgalvez\Downloads\WF_WCF_Samples.exe
+		RemoteMachine = ITGLAP0018
+		StartingDirectory = F:\Users\rgalvez\Downloads
+		Environment = Default
+		LaunchingEngine = 00000000-0000-0000-0000-000000000000
+		UseLegacyDebugEngines = No
+		LaunchSQLEngine = No
+		AttachLaunchAction = No
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{4BFE4959-BF55-4C10-AD4C-180A2C1F4362}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4BFE4959-BF55-4C10-AD4C-180A2C1F4362}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BFE4959-BF55-4C10-AD4C-180A2C1F4362}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4BFE4959-BF55-4C10-AD4C-180A2C1F4362}.Debug|x86.Build.0 = Debug|Any CPU
 		{4BFE4959-BF55-4C10-AD4C-180A2C1F4362}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4BFE4959-BF55-4C10-AD4C-180A2C1F4362}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BFE4959-BF55-4C10-AD4C-180A2C1F4362}.Release|x86.ActiveCfg = Release|Any CPU
+		{4BFE4959-BF55-4C10-AD4C-180A2C1F4362}.Release|x86.Build.0 = Release|Any CPU
 		{32038873-10A4-4F54-82F7-F4C76B752BE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{32038873-10A4-4F54-82F7-F4C76B752BE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32038873-10A4-4F54-82F7-F4C76B752BE3}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{32038873-10A4-4F54-82F7-F4C76B752BE3}.Debug|x86.Build.0 = Debug|Any CPU
 		{32038873-10A4-4F54-82F7-F4C76B752BE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{32038873-10A4-4F54-82F7-F4C76B752BE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32038873-10A4-4F54-82F7-F4C76B752BE3}.Release|x86.ActiveCfg = Release|Any CPU
+		{32038873-10A4-4F54-82F7-F4C76B752BE3}.Release|x86.Build.0 = Release|Any CPU
 		{31E00A1D-C706-4848-997A-56F576E16DB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{31E00A1D-C706-4848-997A-56F576E16DB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31E00A1D-C706-4848-997A-56F576E16DB9}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{31E00A1D-C706-4848-997A-56F576E16DB9}.Debug|x86.Build.0 = Debug|Any CPU
 		{31E00A1D-C706-4848-997A-56F576E16DB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{31E00A1D-C706-4848-997A-56F576E16DB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31E00A1D-C706-4848-997A-56F576E16DB9}.Release|x86.ActiveCfg = Release|Any CPU
+		{31E00A1D-C706-4848-997A-56F576E16DB9}.Release|x86.Build.0 = Release|Any CPU
+		{622B3B4F-2DF4-492C-B4AA-2CB4F54E6B6E}.Debug|Any CPU.ActiveCfg = Release|x86
+		{622B3B4F-2DF4-492C-B4AA-2CB4F54E6B6E}.Debug|x86.ActiveCfg = Release|x86
+		{622B3B4F-2DF4-492C-B4AA-2CB4F54E6B6E}.Release|Any CPU.ActiveCfg = Release|x86
+		{622B3B4F-2DF4-492C-B4AA-2CB4F54E6B6E}.Release|x86.ActiveCfg = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{622B3B4F-2DF4-492C-B4AA-2CB4F54E6B6E} = {E630995A-C571-4EBB-A48F-82CD980780C5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3A58B71A-169E-4BE5-AE44-5DD667E83064}
