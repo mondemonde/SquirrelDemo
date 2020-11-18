@@ -33,7 +33,7 @@ namespace SquirrelDemo
         {
             try
             {
-                    using (var mgr = UpdateManagerPlatform.GitHubUpdateManager2(url))
+                    using (var mgr = UpdateManagerPlatform.GitHubDownLoad(url))
                     {
                       //await mgr.Result.UpdateApp();                     
 
@@ -55,7 +55,6 @@ namespace SquirrelDemo
         private void button1_Click(object sender, EventArgs e)
         {
             var url = textBox1.Text;
-
 
             //TIP Synch to Asynch
             var result = AsyncHelper.RunSync<string>(async () => {

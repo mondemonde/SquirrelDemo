@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
@@ -43,12 +44,6 @@ namespace SteeroidPlatformInstaller
             public Uri Url { get; set; }
         }
 
-
-
-
-
-
-
         [DataContract]
         public class Release
         {
@@ -62,19 +57,34 @@ namespace SteeroidPlatformInstaller
             public string HtmlUrl { get; set; }
         }
 
-      
+      public static string GitRepo
+        {
+            get
+            {
+                string git = ConfigurationManager.AppSettings["GitRepo"];
+                return git;
+
+            }
+        }
 
 
-       public static async Task<SquirrelMngr> GitHubUpdateManager2(
+       public static async Task<SquirrelDownloadMngr> GitHubDownLoad(
        // public static async Task<bool> GitHubUpdateManager2(
 
-           string repoUrl,
+           string repoUrl= "",
            string applicationName = null,
            string rootDirectory = null,
           // IFileDownloader urlDownloader = null,
            bool prerelease = false,
            string accessToken = null)
         {
+
+            if(string.IsNullOrEmpty(repoUrl))
+            {
+                repoUrl = GitRepo;
+            }
+
+
             var repoUri = new Uri(repoUrl);
             var userAgent = new ProductInfoHeaderValue("Squirrel", Assembly.GetExecutingAssembly().GetName().Version.ToString());
 
@@ -133,10 +143,10 @@ namespace SteeroidPlatformInstaller
 
 
                 //extract it now here..
-                SquirrelMngr loader = new SquirrelMngr();
-                SquirrelMngr.ApplicationName = applicationName;
-                SquirrelMngr.RootDirectory = rootDirectory;
-                SquirrelMngr.UrlDownloader =null;
+                SquirrelDownloadMngr loader = new SquirrelDownloadMngr();
+                SquirrelDownloadMngr.ApplicationName = applicationName;
+                SquirrelDownloadMngr.RootDirectory = rootDirectory;
+                SquirrelDownloadMngr.UrlDownloader =null;
 
                 loader.DownLoadZip(latestReleaseUrl);
 

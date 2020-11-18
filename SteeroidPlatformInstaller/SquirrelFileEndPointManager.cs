@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -31,7 +32,10 @@ namespace SteeroidPlatformInstaller
 
                         //C:\Users\rgalvez\AppData\Local\SteeroidAutomation
                         //var app = "SteeroidAutomation";
-                        var app = "SquirrelDemo";
+
+                        string app = ConfigurationManager.AppSettings["AppName"];
+                        //var app = "SteeroidAutomation";
+
 
                         _installFolder = Path.Combine(local, app);
                     }
@@ -54,7 +58,8 @@ namespace SteeroidPlatformInstaller
                     if (string.IsNullOrEmpty(_installFolder))
                     {
                         // _installFolder = @"C:\BlastAsia\Steeroid";
-                        var local = AppDomain.CurrentDomain.BaseDirectory;
+                        var local = @"C:\BlastAsia\Steeroid";//
+
 
 
 
@@ -78,7 +83,7 @@ namespace SteeroidPlatformInstaller
             {
                 //C:\BlastAsia\Common
                 if (string.IsNullOrEmpty(_myCommon))
-                    _myCommon = Path.Combine(InstallFolder, "Common");
+                    _myCommon = Path.Combine(InstallFolderPlatform, "Common");
 
                 return _myCommon;
             }

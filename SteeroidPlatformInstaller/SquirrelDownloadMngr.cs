@@ -12,7 +12,7 @@ using TaskWaiter;
 
 namespace SteeroidPlatformInstaller
 {
-   public class SquirrelMngr
+   public class SquirrelDownloadMngr
     {
         //return new UpdateManager(latestReleaseUrl, applicationName, rootDirectory, urlDownloader);
 
@@ -40,12 +40,32 @@ namespace SteeroidPlatformInstaller
 
             webClient = new WebClient();
             webClient.DownloadFileCompleted += new AsyncCompletedEventHandler(Completed);
+            webClient.DownloadProgressChanged += WebClient_DownloadProgressChanged; //new AsyncCompletedEventHandler(client_DownloadProgressChanged);
+
 
             webClient.Headers.Add("user-agent", "Anything");
+            PercentDownload = 0;
             webClient.DownloadFileAsync(new Uri(url),Path.Combine( SquirrelFileEndPointManager.Temp,"Data.zip"));
 
 
         }
+
+        public static int PercentDownload { get; set; }
+
+        private void WebClient_DownloadProgressChanged(object sender, DownloadProgressChangedEventArgs e)
+        {
+            double bytesIn = double.Parse(e.BytesReceived.ToString());
+            double totalBytes = double.Parse(e.TotalBytesToReceive.ToString());
+            double percentage = bytesIn / totalBytes * 100;
+            PercentDownload =(int)Math.Truncate(percentage);
+
+            //label2.Text = "Downloaded " + e.BytesReceived + " of " + e.TotalBytesToReceive;
+            //progressBar1.Value = int.Parse(Math.Truncate(percentage).ToString());
+        }
+
+
+
+
 
         private void Completed(object sender, AsyncCompletedEventArgs e)
         {
@@ -79,17 +99,21 @@ namespace SteeroidPlatformInstaller
                 Console.WriteLine(releases.First());
             }
 
-            using (
-                 var squirrel = new UpdateManager(releases.First(), ApplicationName, RootDirectory, UrlDownloader))
-            {
-                var result = AsyncHelper.RunSync<bool>(async () =>
-                {
-                    await squirrel.UpdateApp();
-                    return true;
-                });
-            }
 
-                    
+            #region DO the UPDATE
+
+            //using (
+            //     var squirrel = new UpdateManager(releases.First(), ApplicationName, RootDirectory, UrlDownloader))
+            //{
+            //    var result = AsyncHelper.RunSync<bool>(async () =>
+            //    {
+            //        await squirrel.UpdateApp();
+            //        return true;
+            //    });
+            //}
+
+            #endregion
+
 
             Console.WriteLine("Download completed!");
             IsDownloadDone = true;

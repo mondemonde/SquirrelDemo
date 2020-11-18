@@ -73,6 +73,7 @@
       <HintPath>..\packages\squirrel.windows.2.0.1\lib\Net45\Squirrel.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.IO.Compression.FileSystem" />
     <Reference Include="System.Runtime.Serialization" />
@@ -97,7 +98,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SquirrelFileEndPointManager.cs" />
-    <Compile Include="SquirrelMngr.cs" />
+    <Compile Include="SquirrelDownloadMngr.cs" />
     <Compile Include="TaskAwaiter.cs" />
     <Compile Include="UpdateManager.Factory.cs" />
     <EmbeddedResource Include="Form1.resx">
