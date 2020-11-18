@@ -15,6 +15,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Releases", "Releases", "{E6
 		Releases\SquirrelDemo-1.0.1-full.nupkg = Releases\SquirrelDemo-1.0.1-full.nupkg
 		Releases\SquirrelDemo-1.0.2-delta.nupkg = Releases\SquirrelDemo-1.0.2-delta.nupkg
 		Releases\SquirrelDemo-1.0.2-full.nupkg = Releases\SquirrelDemo-1.0.2-full.nupkg
+		Releases\SquirrelDemo-1.0.3-delta.nupkg = Releases\SquirrelDemo-1.0.3-delta.nupkg
+		Releases\SquirrelDemo-1.0.3-full.nupkg = Releases\SquirrelDemo-1.0.3-full.nupkg
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Squirrel", "Squirrel\Squirrel.csproj", "{32038873-10A4-4F54-82F7-F4C76B752BE3}"
